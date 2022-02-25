@@ -1,3 +1,33 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": ["plugin:react/recommended", "airbnb"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "react/jsx-filename-extension": [
+      1,
+      { "extensions": [".js", ".jsx", ".ts", ".tsx"] }
+    ],
+    "react/react-in-jsx-scope": "off",
+    "react/function-component-definition": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "eslint-disable import/no-unresolved": "off",
+    "eslint-disable import/extensions": "off",
+    "eslint-disable quotes": "off",
+    "eslint-disable react/require-default-props": "off",
+    "eslint-disable jsx-a11y/anchor-is-valid": "off",
+    "eslint-disable jsx-a11y/anchor-is-valid ": "off",
+    "eslint-disable no-underscore-dangle ": "off",
+    "eslint-disable consistent-return": "off"
+  }
 }
